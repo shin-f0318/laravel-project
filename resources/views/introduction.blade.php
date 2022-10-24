@@ -5,8 +5,8 @@
     <meta charset="utf-8"><!-- 文字化け防止 -->
     <meta name="description" content="藤本慎也の紹介を掲載します。">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="../css/style.css"> -->
-    <link href="{{asset('../css/style.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    
 </head><!-- 裏設定エリアの終了 -->
 
 <body><!-- 画面に表示されるエリアの開始 -->
@@ -17,9 +17,9 @@
     
         <!-- PC用ナビゲーション -->
         <nav id="nav-pc">
-            <a href="index.html#Introduction">introduction</a>
-            <a href="portfolio.html">portfolio</a>
-            <a href="contact.html">contact</a>
+            <a href="introduction">introduction</a>
+            <a href="portfolio">portfolio</a>
+            <a href="contact">contact</a>
         </nav>
 
     </header>
