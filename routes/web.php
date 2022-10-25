@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HelloController;
 use App\Http\Controllers\introductionController;
+use App\Http\Controllers\contactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,3 +21,5 @@ Route::get('/', function () {
 
 Route::get('hello', [HelloController::class, 'index']);
 Route::get('introduction', [introductionController::class, 'introduction']);
+Route::get('contact', [contactController::class, 'contact']);
+Route::post('confirmation', [contactController::class, 'confirmation']);
