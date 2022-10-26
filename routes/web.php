@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HelloController;
 use App\Http\Controllers\introductionController;
 use App\Http\Controllers\contactController;
+use App\Http\Controllers\HomeworkController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,3 +24,5 @@ Route::get('hello', [HelloController::class, 'index']);
 Route::get('introduction', [introductionController::class, 'introduction']);
 Route::get('contact', [contactController::class, 'contact']);
 Route::post('confirmation', [contactController::class, 'confirmation']);
+Route::get('Homework', [HomeworkController::class, 'Homework']);
+Route::post('Homework-confirm', [HomeworkController::class, 'Homework-confirm']);
