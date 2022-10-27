@@ -104,9 +104,9 @@
         </section>
         <footer>
             <div id="footer-link">
-                <a href="index.html#Introduction">Introduction</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a> 
+                <a href="index">Introduction</a>
+                <a href="portfolio">Portfolio</a>
+                <a href="contact">Contact</a> 
             </div>
         </footer>
         <script src="../js/script.js"></script>

@@ -12,6 +12,7 @@ class contactController extends Controller
     public function confirmation(Request $request){
         return view('confirmation');
     }    
+    
     /* public function contact() { 
         $contact_submit function ()= {
         }
