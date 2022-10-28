@@ -18,13 +18,14 @@ class HomeworkController extends Controller
         } else {
             echo '0~100を入力してください';
         }
-        return view('Homework-confirm');
+        return view('Homework-confirm', compact('$test'));
     }
     public function sum(Request $request) {
         $sum = 0;
         while ($sum <= 1 && $sum >= 100) {
             $sum += $sum;
+            echo $sum;
         }
-        return view('Homework-confirm');
+        return view('Homework-confirm', compact('$sum'));
     }
 }    
