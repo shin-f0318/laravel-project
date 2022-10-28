@@ -10,8 +10,11 @@
 
     <body>
         <h2>結果表示</h2>
-        <p><?php echo $post['number']; ?></p>
-        
+        <p>{{$test}}<</p>
+        <br>
+
+        <h2>1から100までの合計値は</h2>
+        <p>{{$sum}}</p>
 
         
     </body>
