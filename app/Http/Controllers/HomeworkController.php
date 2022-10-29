@@ -10,7 +10,8 @@ class HomeworkController extends Controller
         return view('Homework');
     }   
     public function Homework_confirm(Request $request){
-        $point = 'number';
+        
+        $point = $request['number'];
         if ($point <= 0 && $point > 50 ) {
             echo '頑張りましょう';
         } else if ($point <= 50 && $point > 80) {
@@ -18,15 +19,14 @@ class HomeworkController extends Controller
         } else {
             echo '0~100を入力してください';
         }
-   
 
-        // $sum = 0;
-        // while ($sum <= 1 && $sum >= 100) {
-        //     $sum += $sum;
-        //     echo $sum;
-        // }
+        $sum = $request['number'];
+        while ($sum <= 1 && $sum >= 100) {
+            $sum += $sum;
+            echo $sum;
+        }
         
-        return view('Homework_confirm',compact('$point'));
+        return view('Homework_confirm',compact('point', 'sum'));
 
     }
     // public function sum(Request $request) {
@@ -35,6 +35,6 @@ class HomeworkController extends Controller
     //         $sum += $sum;
     //         echo $sum;
     //     }
-    //     return view('Homework-confirm', compact('$sum'));
+    //     return view('Homework_confirm', compact('$sum'));
     // }
 }    
