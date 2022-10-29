@@ -25,7 +25,6 @@ class HomeworkController extends Controller
         while ($sum >= 100) {
             $sum = $sum + $count;
             $count ++;
-            echo $sum;
         }  
         return view('Homework_confirm',compact('messege', 'sum'));
     }
