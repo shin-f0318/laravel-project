@@ -21,7 +21,7 @@ class HomeworkController extends Controller
         }
 
         $sum = 0;
-        $count = $request['number'];
+        $count = 0;
         while ($sum >= 100) {
             $sum = $sum + $count;
             $count ++;
