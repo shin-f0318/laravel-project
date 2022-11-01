@@ -13,57 +13,40 @@ const errorMesssage = document.getElementById('errorMessage');
 
 let check = () => {
     let error = "必須項目です。";
-    
-    //let message = "";
+    let flag = 0;
 
     if (name.value =="") {
+        flag = 1;
+    }else if (hurigana.value =="") {
+        flag = 2;
+    }else if (email.value =="") {
+        flag = 3;
+    } else if (tel.value =="") {
+        flag = 4;
+    } else if (info.value=="") { 
+        flag = 5;
+    }else if (radio.value="") {
+        flag = 6;
+    } else if (flag == 1) {
         document.getElementById("errorMessage").innerHTML = error;
-        // \n　⇦改行
-        //message+=("名前を入力してください\n");
-        
-        // alert("名前を入力してください");
-        // return false;
-    }
-    if (hurigana.value =="") {
-        document.getElementById("errorMessage1").innerHTML = error;
-        //message+=("フリガナを入力してください\n");
-        
-        // alert("フリガナを入力してください");
-        // return false;
-    }
-    if (email.value =="") {
-        document.getElementById("errorMessage2").innerHTML = error;
-        //message+=("メールアドレスを入力してください\n")
-        
-        //alert("メールアドレスを入力してください");
-        //return false;
-    }
-    if (tel.value =="") {
-        document.getElementById("errorMessage3").innerHTML = error;
-        //message+=("電話番号を入力してください\n");
-        
-        //alert("電話番号を入力してください");
-        //return false;
-    }
-    if (info.value=="") {
-        document.getElementById("errorMessage4").innerHTML = error;
-        //message+=("お問い合わせ内容を入力してください\n");
-        
-        //alert("お問い合わせ内容を入力してください");
-        //return false;
-    }
-    if (radio.value="") {
-        document.getElementById("errorMessage5").innerHTML = error;
-        //message+=("ご希望の連絡先にチェックをしてください\n");
-        
-        //alert("ご希望の連絡先にチェックをしてください");
-        //return false;
-    }
-    /* if (message.value != "") {
-        alert(message);
         return false;
-    } */
-    return false;
+    } else if (flag == 2) {
+        document.getElementById("errorMessage1").innerHTML = error;
+        return false;
+    } else if (flag == 3) {
+        document.getElementById("errorMessage2").innerHTML = error;
+    } else if (flag == 4) {
+        document.getElementById("errorMessage3").innerHTML = error;
+        return false;
+    } else if (flag == 5) {
+        document.getElementById("errorMessage4").innerHTML = error;
+        return false;
+    } else if (flag == 6) {
+        document.getElementById("errorMessage5").innerHTML = error;
+        return false;
+    } else if (flag == 0) {
+        return true;
+    }
 }
 
     
