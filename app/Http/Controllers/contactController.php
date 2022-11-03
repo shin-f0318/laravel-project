@@ -8,10 +8,10 @@ use App\Models\Content;
 class contactController extends Controller
 {
     public function contact(){ 
-        return view('contact');
+        return view('develop/contact');
     }
     public function confirmation(Request $request){
-        return view('confirmation');
+        return view('develop/confirmation');
     }    
     public function store(Request $request) {
         $contact = new Content();
@@ -23,6 +23,6 @@ class contactController extends Controller
         $contact->contact = $request->input('contact');
         $contact->save();
 
-        return redirect('confirmation');
+        return redirect('develop/contact');
     }
 }

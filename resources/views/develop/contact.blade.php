@@ -19,9 +19,14 @@
             </nav>
 
         </header>
-        
+        <!-- <h1>お問合せ一覧</h1>
+
+        @if (session('flash_message'))
+            <p>{{session('flash_message')}}</p>
+        @endif -->
+
         <section id="contact">
-        <form action="confirmation" method="post">
+        <form action="store" method="post">
         @csrf
             <div>
                 <div class="contact-heading">

@@ -10,8 +10,8 @@
 
     <body>
         <h2>入力内容をご確認ください。</h2>
-        <form action="store" method="post">
-            <p>お名前:<?php echo $_POST['name']; ?></p>
+        <form action="cofirmation" method="post">
+            <p>お名前:<?php ['name']; ?></p>
             <p>フリガナ:<?php echo $_POST['hurigana']; ?></p>
             <p>メールアドレス:<?php echo $_POST['email']; ?></p>
             <p>電話番号:<?php echo $_POST['tel']; ?></p>
