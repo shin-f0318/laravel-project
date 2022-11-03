@@ -21,7 +21,7 @@
         </header>
         
         <section id="contact">
-        <form action="store" method="post">
+        <form action="confirmation" method="post">
         @csrf
             <div>
                 <div class="contact-heading">

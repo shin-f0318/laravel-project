@@ -21,9 +21,11 @@ Route::get('/', function () {
 });
 
 Route::get('hello', [HelloController::class, 'index']);
+
 Route::get('introduction', [introductionController::class, 'introduction']);
 Route::get('contact', [contactController::class, 'contact']);
 Route::post('confirmation', [contactController::class, 'confirmation']);
+Route::post('contact', [contactController::class, 'store']);
+
 Route::get('Homework', [HomeworkController::class, 'Homework']);
 Route::post('Homework_confirm', [HomeworkController::class, 'Homework_confirm']);
-Route::post('contact', [contactController::class, 'store']);
