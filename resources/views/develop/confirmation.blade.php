@@ -9,6 +9,17 @@
     </head>
 
     <body>
+        <header>
+            <h1>内容確認</h1>
+
+            <nav id="contact-pc">
+                <a href="introduction">introduction</a>
+                <a href="portfolio">portfolio</a>
+                <a href="contact">contact</a>
+            </nav>
+
+        </header>
+
         <h2>入力内容をご確認ください。</h2>
         <form action="cofirmation" method="post">
             <p>お名前:<?php ['name']; ?></p>

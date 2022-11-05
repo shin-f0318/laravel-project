@@ -23,6 +23,6 @@ class contactController extends Controller
         $contact->contact = $request->input('contact');
         $contact->save();
 
-        return redirect('develop.contact');
+        return view('develop.confirmation');
     }
 }
