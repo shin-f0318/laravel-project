@@ -10,7 +10,7 @@
 
     <body>
         <header>
-            <h1>内容確認</h1>
+            <h1>登録内容</h1>
 
             <nav id="contact-pc">
                 <a href="introduction">introduction</a>
@@ -20,14 +20,15 @@
 
         </header>
 
-        <h2>入力内容をご確認ください。</h2>
-        <form action="cofirmation" method="post">
-            <p>お名前:<?php ['name']; ?></p>
-            <p>フリガナ:<?php echo $_POST['hurigana']; ?></p>
-            <p>メールアドレス:<?php echo $_POST['email']; ?></p>
-            <p>電話番号:<?php echo $_POST['tel']; ?></p>
-            <p>お問い合わせ内容：<?php echo $_POST['message']; ?></p>
-            <p>ご希望の連絡先：<?php echo $_POST['contact']; ?></p>
+        <h2>登録内容をご確認ください。</h2>
+        <form action="confirmation" method="post">
+            <p>お名前:{{$show_contact->name}}</p>
+            <p>フリガナ:{{$show_contact->hurigana}}</p>
+            <p>メールアドレス:{{$show_contact->email}}</p>
+            <p>電話番号:{{$show_contact->tel}}</p>
+            <p>お問い合わせ内容：{{$show_contact->message}}</p>
+            <p>ご希望の連絡先：{{$show_contact->contact}}</p>
+            <!-- <input type = submit name = 'submit'> -->
         </form>
     </body>
 </html>

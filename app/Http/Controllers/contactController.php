@@ -11,6 +11,7 @@ class contactController extends Controller
         return view('develop.contact');
     }
     public function confirmation(Request $request){
+
         return view('develop.confirmation');
     }    
     public function store(Request $request) {
@@ -22,7 +23,9 @@ class contactController extends Controller
         $contact->message = $request->input('message');
         $contact->contact = $request->input('contact');
         $contact->save();
+        $show_contact = Content::find($contact->id);
+        
 
-        return view('develop.confirmation');
+        return view('develop.confirmation', compact('show_contact'));
     }
 }
